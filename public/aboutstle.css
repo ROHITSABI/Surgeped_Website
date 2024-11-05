@@ -40,7 +40,7 @@ body{
 
 }
 
-.ExpertSection{
+/* .ExpertSection{
     position: relative;
     display: flex;
     align-items: center;
@@ -54,11 +54,78 @@ body{
     text-align: center;
     max-width: 50%;
     margin-bottom: 10%;
+} */
+
+
+/* ============================ */
+/* Main container */
+.ExpertSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
 }
+
+/* Liquid motion effect background for desktop (no animation on desktop) */
+/* .ExpertSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(45deg, #6a5af9, #f06292, #36d1dc);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: -1; 
+} */
+
+/* Circle image without animation on desktop */
+.ExpertSection img.CirclePngBrand {
+    width: 490px;
+    height: 490px;
+    border-radius: 50%;
+    border: 5px solid #000;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+/* Text styling for both desktop and mobile */
+.ExpertSectionText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: left;
+    max-width: 50%;
+    margin: 0;
+    line-height: 1.6;
+    animation: fadeInText 2s ease-in-out;
+}
+
+/* Fade-in text animation */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================ */
+
 
 .lineExpert2{
     position: absolute;
-    top: -2rem;
+    top: 0rem;
 }
 
 .missionSection{
@@ -181,7 +248,7 @@ body{
     }
 
 
-    .ExpertSection{
+    /* .ExpertSection{
         flex-direction: column;
     }
     .ExpertSection div{
@@ -192,7 +259,80 @@ body{
 
     .ExpertSectionText{
         max-width: 70%;
+    } */
+
+
+    /* ========================= */
+    /* Apply flex column layout on mobile */
+    .ExpertSection {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
     }
+
+    .ExpertSection::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(45deg, #6a5af9, #d4f2b5, #36d1dc);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        z-index: -1; /* Keep it behind other content */
+    }
+
+    /* Liquid ripple and bounce effects only on mobile devices */
+    .ExpertSection img.CirclePngBrand {
+        width: 250px;
+        height: 250px;
+        margin-left: 0;
+        margin-bottom: 20px;
+        border: 3px solid #000;
+        padding: 5px;
+        animation: liquidRipple 6s infinite ease-in-out, liquidBounce 5s infinite alternate ease-in-out;
+    }
+
+    /* Keyframes for the bounce effect */
+    @keyframes liquidBounce {
+        0% {
+            transform: scale(1) translateY(0);
+        }
+        50% {
+            transform: scale(1.05) translateY(-15px);
+        }
+        100% {
+            transform: scale(1) translateY(0);
+        }
+    }
+
+    /* Keyframes for the ripple effect */
+    @keyframes liquidRipple {
+        0% {
+            transform: scale(1) translateY(0);
+            filter: blur(0px);
+        }
+        50% {
+            transform: scale(1.02) translateY(-5px);
+            filter: blur(3px);
+        }
+        100% {
+            transform: scale(1) translateY(0);
+            filter: blur(0px);
+        }
+    }
+
+    /* Text styling on mobile */
+    .ExpertSectionText {
+        max-width: 90%;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        line-height: 1.8;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    /* ======================== */
 
     .missionSection{
         flex-direction: column;

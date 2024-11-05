@@ -192,6 +192,20 @@
     <%- include('./partials/footer2.ejs') %>
 <script src="./scriptmenu.js" type="text/javascript" defer"></script>
 
+<script>
+    window.addEventListener('scroll', function() {
+        var section = document.querySelector('.OurExpertsMobile');
+        var sectionPosition = section.getBoundingClientRect().top;
+        var screenPosition = window.innerHeight / 1.2;
+    
+        if (sectionPosition < screenPosition) {
+            section.classList.add('active');
+        }
+    });
+    </script>
+    
+    
+    
 </body>
 
 </html>

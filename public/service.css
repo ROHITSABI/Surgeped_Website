@@ -392,7 +392,7 @@ body {
     height: 8rem;
 }
 
-.OurExpertsMobile{
+/* .OurExpertsMobile{
     display: none;
     text-align: center;
     background-color: #33343E;
@@ -438,7 +438,105 @@ body {
 
 .OurExpertsMobileFlex div:nth-child(3) img{
     width: 90%;
+} */
+
+/* General Styles for Our Experts Section */
+.OurExpertsMobile {
+    display: none;
+    text-align: center;
+    background-color: #33343E;
+    padding: 2rem 0;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
 }
+
+/* When the Section is in View, Apply these Styles */
+.OurExpertsMobile.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Headings and Text Styles */
+.OurExpertsMobile h2 {
+    color: #FFE23E;
+    margin-bottom: 1.5rem;
+}
+
+.OurExpertsMobile p {
+    margin-bottom: 2rem;
+}
+
+/* Flex Container for the Experts */
+.OurExpertsMobileFlex {
+    display: flex;
+    gap: 2.5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap; /* Keeps images in one row */
+}
+
+/* Flex Item (Each Expert) */
+.OurExpertsMobileFlex div {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+}
+
+.OurExpertsMobileFlex div:hover {
+    transform: scale(1.1);
+}
+
+/* Images for Experts */
+.OurExpertsMobileFlex img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Animated Circle Around Each Image */
+.OurExpertsMobileFlex div::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #FFE23E;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px 5px rgba(255, 226, 62, 0.5);
+}
+
+/* Revolving Ball */
+.OurExpertsMobileFlex div::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #FFE23E;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: revolveOuterBall 4s linear infinite;
+    box-shadow: 0 0 8px rgba(255, 226, 62, 0.7);
+}
+
+/* Keyframes for Ball Rotating Around Outer Circle */
+@keyframes revolveOuterBall {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(130px);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(130px);
+    }
+}
+
 
 @media (max-width: 768px) {
     .servetext{
@@ -532,9 +630,48 @@ body {
         animation: none;
     }
 
-    .OurExpertsMobile{
+    /* .OurExpertsMobile{
         display: block;
+    } */
+
+    /* ========================= */
+    .OurExpertsMobile {
+        display: block;
+        padding: 1rem 0;
     }
+
+    .OurExpertsMobileFlex {
+        flex-wrap: wrap; /* Allows wrapping on small screens */
+        justify-content: space-around;
+    }
+    .OurExpertsMobileFlex img {
+        width: 54%;
+        border-radius: 50%;
+    }
+    .OurExpertsMobile.active {
+        opacity: 1;
+        transform: translateY(0);
+        height: 33rem;
+    }
+    .OurExpertsMobileFlex h3{
+        margin-top: 2rem;
+    }
+    .OurExpertsMobileFlex div {
+        width: 140px;
+        height: 140px;
+    }
+
+    .OurExpertsMobileFlex div::before {
+        width: 191px;
+        height: 191px;
+    }
+
+    .OurExpertsMobileFlex div::after {
+        width: 15px;
+        height: 15px;
+        animation: revolveOuterBall 3s linear infinite;
+    }
+    /* ========================= */
 
     .team{
         display: none;

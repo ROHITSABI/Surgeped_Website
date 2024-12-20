@@ -46,15 +46,7 @@ nav a img{
     width: 8rem;
 }
 
-.navItemsRight ul{
-    font-family: 'Iceland', cursive;
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    gap: 1.5rem;
-    transition: transform 0.3s ease-in-out;
-}
-
+.navItemsRight ul,
 .navItemsRightMB ul{
     font-family: 'Iceland', cursive;
     display: flex;
@@ -64,14 +56,16 @@ nav a img{
     transition: transform 0.3s ease-in-out;
 }
 
-.navItemsRight ul a{
+/* .navItemsRightMB ul{
+    font-family: 'Iceland', cursive;
+    display: flex;
     list-style: none;
     text-decoration: none;
-    color: black;
-    cursor: pointer;
-    font-size: 1.5rem;
-}
+    gap: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+} */
 
+.navItemsRight ul a,
 .navItemsRightMB ul a{
     list-style: none;
     text-decoration: none;
@@ -79,6 +73,14 @@ nav a img{
     cursor: pointer;
     font-size: 1.5rem;
 }
+
+/* .navItemsRightMB ul a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+} */
 
 .logoSurge{
 
@@ -203,19 +205,19 @@ nav a img{
     margin: auto;
 }
 .services .SrvcImg8{
-    background: url("/img/lead geneation.png");
+    background: url("/img/lead geneation.webp");
     background-size: cover;
     height: 8rem;
     margin: auto;
 }
 .services .SrvcImg9{
-    background: url("/img/UIUXDesign.png");
+    background: url("/img/UIUXDesign.webp");
     background-size: cover;
     height: 8rem;
     margin: auto;
 }
 .services .SrvcImg10{
-    background: url("/img/Email Marketing.png");
+    background: url("/img/Email Marketing.webp");
     background-size: cover;
     height: 8rem;
     margin: auto;
@@ -338,9 +340,6 @@ nav a img{
     height: 16vh;
     padding-bottom: 2rem;
     padding-right: 2rem ;
-
-
-
 }
 
 .HireTextContent h2{
@@ -373,10 +372,7 @@ nav a img{
     background-color: #FFE922;
     padding: .3rem .7rem;
     cursor: pointer;
-
 }
-
-
 .TextSection{
     margin-left: 1rem;
 
@@ -595,19 +591,14 @@ nav a img{
 }
 
 .MissionText{
-
     color: #5CE21D;
     text-align: center;
     max-width: 20rem;
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
 .SecWorkAtSurgeped{
-
     background: lemonchiffon;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -619,19 +610,16 @@ nav a img{
 
 .SecWorkAtSurgeped:hover {
     background: #ffff98;
-
 }
 
 .WorkEnvImg{
     background: url("/img/Job-Work-PNG-File 1.webp")no-repeat;
     background-size: cover;
-
     width: 22rem;
     height: 14rem;
 }
 
 .WorkText{
-
     color: black;
     text-align: center;
     max-width: 20rem;
@@ -764,9 +752,6 @@ nav a img{
     overflow: hidden;
 }
 
-
-
-
 .menu-btn{
     position: relative;
     display: none;
@@ -897,8 +882,6 @@ menu-btn.open .menu-btn-lines{
     width: 36%;
 }
 
-
-
 .surgepedInfo{
     display: flex;
     flex-direction: column;
@@ -933,9 +916,6 @@ menu-btn.open .menu-btn-lines{
     background-size: 1.8rem;
     width: 2.5rem;
     height:2.5rem;
-
-
-
 }
 .facebook{
     background: url('/img/image-removebg-preview-1.webp')no-repeat;
@@ -943,9 +923,6 @@ menu-btn.open .menu-btn-lines{
     background-size: cover;
     width: 2.5rem;
     height:2.5rem;
-
-
-
 }
 .instagram{
     background: url('/img/2048px-Instagram_icon-removebg-preview-1.webp')no-repeat;
@@ -953,8 +930,6 @@ menu-btn.open .menu-btn-lines{
     background-size: 2rem;
     width: 2.5rem;
     height:2.5rem;
-
-
 }
 .mail{
     background: url('/img/gmail-2981844-2476484-1.webp');
@@ -962,18 +937,12 @@ menu-btn.open .menu-btn-lines{
     background-size: cover;
     width: 2.5rem;
     height:2.5rem;
-
-
 }
-
-
 .myform102{
     background-color: white;
     padding: 2rem;
     font-size: 1rem;
     gap: 1rem;
-
-
 }
 
 .myform102 input{
@@ -1092,8 +1061,7 @@ menu-btn.open .menu-btn-lines{
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: box-shadow .5s ease-in-out;
-    margin: auto;
-    /* margin-top: 50px; */  
+    margin: auto; 
     position: relative;
 }
 

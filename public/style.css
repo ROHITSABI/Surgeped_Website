@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Montserrat:wght@300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Iceland&family=Montserrat:wght@300;400&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 *{
@@ -191,12 +191,12 @@ nav a img{
     width: 8rem;
     margin: auto;
 }
-.services .SrvcImg6{
+/* .services .SrvcImg6{
     background: url("/img/performance_marketing.webp");
     background-size: cover;
     height: 8rem;
     margin: auto;
-}
+} */
 
 .services .SrvcImg7{
     background: url("/img/press-release.png");

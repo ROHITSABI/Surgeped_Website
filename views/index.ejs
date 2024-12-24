@@ -13,6 +13,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Surgeped</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Iceland&family=Montserrat:wght@300;400&display=swap"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link rel="preload" href="/img/performance_marketing.webp" as="image" />
+
     <!--<link rel="stylesheet" href="./aboutstle.css">-->
     <link rel="icon" type="image/x-icon" href="img/logos/asd.webp" />
 
@@ -22,7 +30,7 @@
     -->
 
     <script
-      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+      src="https://cdn.jsdelivr.net/npm/swiper@8.4.5/swiper-bundle.min.js"
       defer
     ></script>
     <!--<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -111,6 +119,34 @@
       }
       .videoSeperater {
         margin-top: 20px; /* Adjust space above the separator */
+      }
+
+      .services .SrvcImg6 {
+        background: url("/img/performance_marketing.webp");
+        background-size: cover;
+        height: 8rem;
+        margin: auto;
+      }
+      .utsah,
+      .tangent,
+      .Cafeatepmlgo,
+      .city2 {
+        height: 100%;
+      }
+      .ahec_logo {
+        height: "50%";
+      }
+      .ogi-kia {
+        width: 60%;
+      }
+      .shriji20logo1 {
+        width: 80%;
+      }
+      .Cloobot-Logo-higher-res-logo {
+        width: 90%;
+      }
+      .phonefloatlogo {
+        width: 60%;
       }
     </style>
   </head>
@@ -522,7 +558,7 @@
                 src="./img/logos/Cloobot-Logo-higher-res-logo.webp"
                 alt="cloobot"
                 loading="lazy"
-                width="90%"
+                class="Cloobot-Logo-higher-res-logo"
               />
             </div>
             <div class="slide">
@@ -531,7 +567,7 @@
                 src="./img/logos/ogi-kia.webp"
                 alt="kia"
                 loading="lazy"
-                width="60%"
+                class="ogi-kia"
               />
             </div>
             <div class="slide">
@@ -547,7 +583,7 @@
                 src="./img/logos/shriji%20logo1.webp"
                 alt="shriji"
                 loading="lazy"
-                width="80%"
+                class="shriji20logo1"
               />
             </div>
             <div class="slide">
@@ -555,7 +591,7 @@
                 src="./img/logos/CITY__2_-removebg-preview.webp"
                 alt="CSM"
                 loading="lazy"
-                height="100%"
+                class="city2"
               />
             </div>
             <div class="slide">
@@ -563,7 +599,7 @@
                 src="./img/logos/Cafeatepmlgo.webp"
                 alt="cafeatepm"
                 loading="lazy"
-                height="100%"
+                class="Cafeatepmlgo"
               />
             </div>
             <div class="slide">
@@ -571,7 +607,7 @@
                 src="./img/logos/LOGOUTSAH.webp"
                 alt="utsah"
                 loading="lazy"
-                height="100%"
+                class="utsah"
               />
             </div>
 
@@ -580,7 +616,7 @@
                 src="./img/logos/tangent.webp"
                 alt="tangent"
                 loading="lazy"
-                height="100%"
+                class="tangent"
               />
             </div>
 
@@ -589,7 +625,7 @@
                 src="./img/logos/ahec_logo.webp"
                 alt="ahec"
                 loading="lazy"
-                height="50%"
+                class="ahec_logo"
               />
             </div>
           </div>
@@ -611,23 +647,23 @@
       </div>
 
       <div class="TeamContainer">
-        <div class="MemberContent">
+        <!-- <div class="MemberContent">
           <div class="MemberImg">
             <img src="./img/abhay.webp" alt="abhay" loading="lazy" />
           </div>
           <div class="MemberText">
             <h2>Abhay Datta</h2>
           </div>
-        </div>
+        </div> -->
 
-        <div class="MemberContent">
+        <!-- <div class="MemberContent">
           <div class="MemberImg">
             <img src="./img/hitesh.webp" alt="hitesh" loading="lazy" />
           </div>
           <div class="MemberText">
             <h2>Hitesh Chhatwani</h2>
           </div>
-        </div>
+        </div> -->
 
         <div class="MemberContent">
           <div class="MemberImg">
@@ -828,7 +864,7 @@
       </div>
 
       <div class="TeamContainer">
-        <div class="member-specific">
+        <!-- <div class="member-specific">
           <div class="MemberContent">
             <div class="MemberImg">
               <img src="./img/abhay.webp" />
@@ -837,9 +873,9 @@
               <h2>Abhay Datta</h2>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="member-specific">
+        <!-- <div class="member-specific">
           <div class="MemberContent">
             <div class="MemberImg">
               <img src="./img/hitesh.webp" />
@@ -848,7 +884,7 @@
               <h2>Hitesh Chhatwani</h2>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- ======================== -->
         <div class="member-specific">
@@ -1060,11 +1096,7 @@
 
     <div class="fixediconcall">
       <a href="tel: +917735981456" aria-label="call us">
-        <img
-          class="phonefloatlogo"
-          alt="call us"
-          src="img/fcall.png"
-          width="60%"
+        <img class="phonefloatlogo" alt="call us" src="img/fcall.png"
       /></a>
     </div>
 
